@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #242424;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+.form-titulo {
+  color: #fff;
+  font-size: 0.5rem;
+}
+
+.formulario {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 4rem;
+  border-radius: 16px;
+}
+
+.form-titulo {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-imagem img {
+  width: 25rem;
+}
+
+.form-imagem {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.input-grupo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  color: #fff;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8rem;
+  width: 100%;
+}
+
+.input-box input {
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid rgb(49, 49, 49);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  background-color: #242424;
+}
+
+.input-box input:hover {
+  background-color: #262626;
+}
+
+.input-box input:focus-visible {
+  outline: 1px solid #161616;
+}
+
+.input-box input::placeholder {
+  color: #ffffff;
+}
+
+.btn-login {
+    width: 40%;
+}
+
+.btn-login button {
+  width: 100%;
+  font-weight: 700;
+  border: none;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+.btn-login button:hover {
+  background-color: #fff;
+  color: #242424;
+}
+
+#data-hora {
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 640px) {
+
+  body {
+    background-color: #242424;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .formulario {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem;
+    border-radius: 16px;
+  }
+
+  .form-imagem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .form-imagem img {
+    width: 10rem;
+  }
+}
