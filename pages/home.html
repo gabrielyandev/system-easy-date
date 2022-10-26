@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <title>Home | Easy Date</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="../assets/img/logo.png" alt="logo-easy-date">
+        </div>
+
+        <div class="main">
+
+            <div class="option">
+                <button onclick="openAndClose('selectRefrigerados')">REFRIGERADOS</button>
+                <div class="oculto select" id="selectRefrigerados">
+                    <a href="">hortifruti</a>
+                    <a href="">latícinios</a>
+                    <a href="">proteína</a>
+                    <a href="">sobremesa</a>
+                    <a href="">outros</a>
+                </div>
+            </div>
+
+            <div class="option">
+                <button onclick="openAndClose('selectCongelados')">CONGELADOS</button>
+                <div class="oculto select" id="selectCongelados">
+                    <a href="">proteina</a>
+                    <a href="">hortifruti</a>
+                    <a href="">outros</a>
+                </div>
+            </div>
+
+            <div class="option">
+                <button onclick="openAndClose('selectSecos')">SECOS</button>
+                <div class="oculto select" id="selectSecos">
+                    <a href="">grãos</a>
+                    <a href="">farinaceos</a>
+                    <a href="">tempero</a>
+                    <a href="">outros</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="menu-select" id="menu"></div>
+    </div>
+
+    <div id="data-hora"></div>
+
+    <script src="../login/login.js"></script>
+</body>
+
+</html>

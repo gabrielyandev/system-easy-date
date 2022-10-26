@@ -1,5 +1,5 @@
 <?php 
-    include_once("conexao.php");
+    /* include_once("conexao.php");
 
     $usuario=$_POST['usuario'];
     $pass=$_POST['pass'];
@@ -13,4 +13,4 @@
     else {
         echo "Erro " . mysqli_error($conexao);
     }
-    mysqli_close($conexao);
+    mysqli_close($conexao); */
