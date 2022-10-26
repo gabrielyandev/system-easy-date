@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Tempo de geração: 29-Set-2022 às 00:44
--- Versão do servidor: 5.7.36
--- versão do PHP: 7.4.26
+-- Host: localhost
+-- Tempo de geração: 27-Out-2022 às 00:09
+-- Versão do servidor: 10.4.25-MariaDB
+-- versão do PHP: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -27,11 +27,31 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `easydate`
 --
 
-DROP TABLE IF EXISTS `easydate`;
-CREATE TABLE IF NOT EXISTS `easydate` (
-  `usuario` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `pass` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+CREATE TABLE `easydate` (
+  `usuario` varchar(45) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `pass` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `id` int(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Índices para tabelas despejadas
+--
+
+--
+-- Índices para tabela `easydate`
+--
+ALTER TABLE `easydate`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de tabelas despejadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `easydate`
+--
+ALTER TABLE `easydate`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
