@@ -16,6 +16,10 @@ body {
   align-items: center;
 }
 
+html,body {
+  transition: all 0.3s ease-in-out;
+}
+
 .container {
   width: 90%;
   height: 80vh;
