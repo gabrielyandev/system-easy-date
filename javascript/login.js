@@ -25,11 +25,13 @@ const zeroFill = (n) => {
     // Exibe na tela
     document.getElementById("data-hora").innerHTML = dataHora;
   }, 1000);
+
+  /* menuHome */
   function openAndClose(id) {
 
     if (document.getElementById(id).classList.contains("oculto")) {
       document.getElementById(id).classList.remove("oculto");
     } else {
       document.getElementById(id).classList.add("oculto");
-    }
+    } 
   }
