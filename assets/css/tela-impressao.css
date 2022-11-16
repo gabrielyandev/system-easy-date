@@ -23,3 +23,9 @@ html,body {
 img {
     width: 800px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .logo img {
+        width: 150px;
+    }
+}
