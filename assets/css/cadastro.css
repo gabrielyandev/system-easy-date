@@ -16,10 +16,6 @@ body {
   align-items: center;
 }
 
-html,body {
-  transition: all 0.3s ease-in-out;
-}
-
 .container {
   width: 90%;
   height: 80vh;
@@ -91,11 +87,11 @@ html,body {
 }
 
 .input-box input:focus-visible {
-  outline: 1px solid #161616;
+  outline: 1px solid #f53f3f;
 }
 
 .input-box input::placeholder {
-  color: #ffffff;
+  color: #545454;
 }
 
 .btn-login {

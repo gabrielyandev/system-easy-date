@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/cadastro.css">
+    <title>Cadastro | Easy Date</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- container -->
+        <div class="formulario">
+            <form action="../php/login.php" method="POST">
+
+                <div class="form-titulo">
+                    <h1>REALIZE O SEU CADASTRO</h1>
+                </div>
+
+                <div class="input-grupo">
+
+                    <div class="input-box">
+                        <label>Usuário:</label>
+                        <input id="usuario" type="text" name="usuario" placeholder="Escolha um nome de usuário" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Senha:</label>
+                        <input id="senha" type="password" name="pass" placeholder="Escolha uma senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Senha novamente:</label>
+                        <input id="senha" type="password" name="cpass" placeholder="Confirmação de senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Email:</label>
+                        <input id="email" type="email" name="email" placeholder="Insira um email" required>
+                    </div>
+                </div>
+
+                <div class="btn-login">
+                    <a href="#"><button>Cadastrar</button></a>
+                </div>
+            </form>
+        </div>
+
+
+
+        <div class="form-imagem">
+            <img src="../assets/img/logo.png" alt="logo-easy-date">
+        </div>
+
+    </div> <!-- fim container -->
+
+    <div id="data-hora"></div>
+
+    <script src="../javascript/login.js"></script>
+</body>
+
+</html>
