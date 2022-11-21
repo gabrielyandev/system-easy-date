@@ -1,6 +1,6 @@
 <?php
 //Incluindo a conexão com banco de dados
-include_once("../php/conexao.php");	
+include_once("conexao.php");	
 //O campo usuário e senha preenchido entra no if para validar
 if((isset($_POST['MESTRE'])) && (isset($_POST['999999']))){
   $usuario = pg_escape_string($conn, $_POST['usuario']); //Escapar de caracteres especiais, como aspas, prevenindo SQL injection

@@ -13,7 +13,7 @@
     <div class="container">
         <!-- container -->
         <div class="formulario">
-            <form action="../php/login.php" method="POST">
+            <form action="" method="POST">
 
                 <div class="form-titulo">
                     <h1>LOGIN</h1>
@@ -28,27 +28,26 @@
 
                     <div class="input-box">
                         <label>Senha:</label>
-                        <input id="senha" type="password" name="pass" placeholder="Insira sua senha" required>
+                        <input id="senha" type="password" name="senha" placeholder="Insira sua senha" required>
                     </div>
-                </div>
-
-                <div class="btn-login">
-                    <a href="#"><button>entrar</button></a>
-                </div>
+                </div> 
             </form>
+            <div class="btn-login">
+                <button onclick="return Login()">entrar</button>
+            </div>
         </div>
+        
 
 
 
         <div class="form-imagem">
-            <img src="../assets/img/logo.png" alt="logo-easy-date">
+            <a href="../index.html">
+                <img src="../assets/img/logo.png" alt="logo-easy-date">
+            </a>
         </div>
 
     </div> <!-- fim container -->
-
-    <div id="data-hora"></div>
-
-    <script src="../javascript/login.js"></script>
+    <script src="../userController/user.js"></script>
 </body>
 
 </html>

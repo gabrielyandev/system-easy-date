@@ -117,7 +117,7 @@ body {
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 720px) {
     .logo img {
         width: 150px;
     }
@@ -155,7 +155,9 @@ body {
         overflow-y: scroll;
     }
 
-    
-
-    
+    .scroll::-webkit-scrollbar {
+        background: rgb(27, 27, 27);
+        width: 5px;
+        border-radius: 10px;
+    }
 }

@@ -11,7 +11,7 @@ define('PORT', '5432');
 //Utilizar o Try/Catch para verificar a conexão.
 try {
     $conn = new pdo('pgsql:host=' . HOST . ';port=' . PORT . ';dbname=' . DBNAME, USER, PASS);
-    header("location:../pages/home.html");
+    header("location:home.html");
     die("Erro: VOCÊ NÃO PODE ACESSAR ESTA PÁGINA!");
     //echo "Conexão com banco de dados realizada com sucesso.";
 } catch (PDOException $e) {
